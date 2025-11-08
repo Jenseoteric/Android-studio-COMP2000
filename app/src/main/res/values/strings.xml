@@ -8,14 +8,20 @@
     <string name="settingsText">Settings</string>
     <string name="notifText">Alerts</string>
     <string name="AddRes">+</string>
+    <string name="userLogin">\n Email: \n \n \n \n \nPassword:</string>
     <string name="Edit">Edit</string>
     <string name="Delete">Delete</string>
+    <string name="login">Login</string>
+    <string name="alerts">No alerts.</string>
     <string name="Confirm">Confirm</string>
     <string name="Cancel">Cancel</string>
     <string name="deleteMessage">DELETE RESERVATION \n ARE YOU SURE?</string>
     <string name="editMessage">EDIT RESERVATION \n ARE YOU SURE?</string>
     <string name="addMessage">ADD RESERVATION \n ARE YOU SURE?</string>
     <string name="settingsEditMessage">CHANGE SETTINGS \n ARE YOU SURE?</string>
+    <string name="menu">MENU: Pad Thai - £8 \n \n Cheeseburger - £4.50 \n \nMilkshake - £3 \n \nChocolate Cake - £3
+    </string>
+    <string name="cheeseburger">Cheeseburger \n £4.50 \n \n Comes with one 1/4lb patty, lettuce, onion and bacon.</string>
     <string name="back">&lt;-</string>
     <string name="settings">Name: W Churchill \n \n Alerts: ON \n \n Vibrate: OFF</string>
     <string name="reservation1">Reservation 1: \nDATE: 20th Dec \nTIME: 13:00  \nSEATS: 4

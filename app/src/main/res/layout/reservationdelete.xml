@@ -24,15 +24,6 @@
         app:layout_constraintVertical_bias="0.274" />
 
     <Button
-        android:id="@+id/button25"
-        android:layout_width="62dp"
-        android:layout_height="68dp"
-        android:text="@string/back"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="803dp" />
-
-    <Button
         android:id="@+id/button9"
         android:layout_width="103dp"
         android:layout_height="108dp"
