@@ -6,6 +6,15 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/button26"
+        android:layout_width="62dp"
+        android:layout_height="68dp"
+        android:text="@string/back"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="803dp" />
+
+    <Button
         android:id="@+id/button6"
         android:layout_width="342dp"
         android:layout_height="151dp"
