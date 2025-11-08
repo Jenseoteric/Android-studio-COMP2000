@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidUIDesignLab2</string>
+    <string name="button1">Button 1</string>
+    <string name="welcometext">Welcome!</string>
+    <string name="question1">Hello, What is your name?</string>
+    <string name="resOverviewText">Reservations</string>
+    <string name="menuText">Menu</string>
+    <string name="settingsText">Settings</string>
+    <string name="notifText">Alerts</string>
+</resources>
