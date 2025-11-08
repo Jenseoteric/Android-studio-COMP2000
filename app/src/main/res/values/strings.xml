@@ -7,4 +7,10 @@
     <string name="menuText">Menu</string>
     <string name="settingsText">Settings</string>
     <string name="notifText">Alerts</string>
+    <string name="AddRes">+</string>
+    <string name="reservation1">Reservation 1: \nDATE: 20th Dec \nTIME: 13:00  \nSEATS: 4
+    </string>
+
+
 </resources>
+
