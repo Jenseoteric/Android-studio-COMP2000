@@ -1,4 +1,4 @@
-package com.example.androiduidesignlab2.data.model;
+package com.example.androidRestaurantApp.data.model;
 
 public class Reservation {
 
@@ -8,4 +8,5 @@ public class Reservation {
     public int groupCount;
 
     public int id;
+
 }

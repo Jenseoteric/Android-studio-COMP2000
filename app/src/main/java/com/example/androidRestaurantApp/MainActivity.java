@@ -1,4 +1,4 @@
-package com.example.androiduidesignlab2;
+package com.example.androidRestaurantApp;
 
 import android.os.Bundle;
 

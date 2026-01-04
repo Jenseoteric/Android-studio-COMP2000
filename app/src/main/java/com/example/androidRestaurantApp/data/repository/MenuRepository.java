@@ -1,7 +1,7 @@
-package com.example.androiduidesignlab2.data.repository;
+package com.example.androidRestaurantApp.data.repository;
 
-import com.example.androiduidesignlab2.data.model.MenuItems;
-import com.example.androiduidesignlab2.data.remote.RESTApiService;
+import com.example.androidRestaurantApp.data.model.MenuItems;
+import com.example.androidRestaurantApp.network.RESTApiService;
 
 public class MenuRepository {
 

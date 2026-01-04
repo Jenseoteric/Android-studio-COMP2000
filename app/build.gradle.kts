@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.androiduidesignlab2"
+    namespace = "com.example.androidRestaurantApp"
     compileSdk {
         version = release(36)
     }
@@ -41,4 +41,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }

@@ -1,4 +1,4 @@
-package com.example.androiduidesignlab2.data.model;
+package com.example.androidRestaurantApp.data.model;
 
 public class MenuItems {
     private String name;
