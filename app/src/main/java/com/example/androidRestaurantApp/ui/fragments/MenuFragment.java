@@ -1,54 +1,58 @@
 package com.example.androidRestaurantApp.ui.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidRestaurantApp.R;
+import com.example.androidRestaurantApp.data.repository.MenuRepository;
+import com.example.androidRestaurantApp.network.RESTApiService;
+import com.example.androidRestaurantApp.ui.adapter.MenuAdapter;
+import com.example.androidRestaurantApp.ui.viewmodel.MenuViewModel;
+import com.example.androidRestaurantApp.ui.viewmodel.ViewModelFactory;
 
-
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MenuFragment extends Fragment {
 
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private MenuViewModel viewModel;
+    private MenuAdapter adapter;
 
     public MenuFragment() {
-
-    }
-
-
-
-    public static MenuFragment newInstance(String param1, String param2) {
-        MenuFragment fragment = new MenuFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+        super(R.layout.fragment_menu);
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        super.onViewCreated(view, savedInstanceState);
+
+        RecyclerView rv = view.findViewById(R.id.recyclerMenu);
+        rv.setLayoutManager(new LinearLayoutManager(requireContext()));
+
+        adapter = new MenuAdapter();
+        rv.setAdapter(adapter);
+
+        Retrofit retrofit = new Retrofit.Builder()
+               // .baseUrl("placeholder link")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        RESTApiService apiService = retrofit.create(RESTApiService.class);
+        MenuRepository repo = new MenuRepository(apiService);
+        ViewModelFactory factory = new ViewModelFactory(repo);
+
+        viewModel = new ViewModelProvider(this, factory).get(MenuViewModel.class);
+
+        viewModel.getMenuItems().observe(getViewLifecycleOwner(), menuItems -> {
+            adapter.setItems(menuItems);
+        });
     }
 }

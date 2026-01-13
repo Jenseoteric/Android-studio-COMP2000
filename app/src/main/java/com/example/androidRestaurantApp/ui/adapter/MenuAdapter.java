@@ -1,4 +1,4 @@
-package com.example.androidRestaurantApp.ui;
+package com.example.androidRestaurantApp.ui.adapter;
 
 
 import android.view.LayoutInflater;
