@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- settings -->
+    <Button
+        android:id="@+id/buttonStaffSettings"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="256dp"
+        android:text="@string/staff_settings"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStaffMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+
+    <Button
+
+        android:id="@+id/buttonStaffReservations"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="268dp"
+        android:text="@string/staff_view_reservations"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStaffMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <!-- manage reservations-->
+    <Button
+        android:id="@+id/buttonStaffMenu"
+        android:layout_width="342dp"
+        android:layout_height="151dp"
+        android:text="@string/staff_manage_reservations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- menu item manager -->
+
+    <Button
+        android:id="@+id/buttonStaffMenu2"
+        android:layout_width="342dp"
+        android:layout_height="151dp"
+        android:text="@string/staff_manage_menu_items"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStaffMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

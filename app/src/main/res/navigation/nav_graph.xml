@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas/android.com/tools"
-    app:startDestination="@id/menuFragment"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+
+    <!-- START SCREEN -->
+    <fragment
+
+        android:id="@+id/loginFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
 
     <fragment
+
         android:id="@+id/menuFragment"
         android:name="com.example.androidRestaurantApp.ui.fragments.MenuFragment"
-        tools:layout="@layout/fragment_menu"
         android:label="Menu"
+        tools:layout="@layout/fragment_menu" />
 
-        />
+    <fragment
+
+        android:id="@+id/staffHomeFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.StaffHomeFragment"
+        android:label="Staff Home"
+        tools:layout="@layout/fragment_staff_home" />
+
+    <fragment
+
+        android:id="@+id/staffReservationsFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.StaffReservationsFragment"
+        android:label="Staff Reservations"
+        tools:layout="@layout/fragment_staff_reservations" />
+
+    <fragment
+
+        android:id="@+id/staffMenuManagerFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.StaffMenuManagerFragment"
+        android:label="Staff Menu Manager"
+        tools:layout="@layout/fragment_staff_menu_manager" />
+
+
+
+    <fragment
+
+        android:id="@+id/staffSettingsFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.StaffSettingsFragment"
+        android:label="Staff Settings"
+        tools:layout="@layout/fragment_staff_settings" />
 
 </navigation>
