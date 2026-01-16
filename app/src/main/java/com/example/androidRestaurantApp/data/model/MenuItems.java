@@ -1,16 +1,82 @@
 package com.example.androidRestaurantApp.data.model;
-import java.util.List;
+
 public class MenuItems {
-    private String description;
 
     private int id;
 
     private String name;
+
+    private String description;
+
     private double price;
 
-    public String getName() { return name; }
-    public double getPrice() { return price; }
-
     private String imageLink;
-    //these are parameters for data for Menu items.
+
+    // empty constructor (needed for Retrofit/Gson sometimes)
+    public MenuItems() {
+
+    }
+
+    // constructor for fallback menu items + quick testing
+    public MenuItems(String name, double price) {
+
+        this.name = name;
+        this.price = price;
+
+    }
+
+    // getters
+    public int getId() {
+
+        return id;
+    }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public String getDescription() {
+
+        return description;
+    }
+
+    public double getPrice() {
+
+        return price;
+    }
+
+    public String getImageLink() {
+
+        return imageLink;
+    }
+
+    // setters
+    public void setId(int id) {
+
+        this.id = id;
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+
+        this.description = description;
+    }
+
+    public void setPrice(double price) {
+
+        this.price = price;
+    }
+
+    public void setImageLink(String imageLink) {
+
+        this.imageLink = imageLink;
+    }
+
+    //these are parameters for data for Menuitems.
+
 }

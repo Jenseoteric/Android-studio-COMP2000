@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-//recyclerview adapter for displaying MenuItems in a list.
+//recyclerview adapter for converting MenuItems into rows.
 
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuVH> {
 

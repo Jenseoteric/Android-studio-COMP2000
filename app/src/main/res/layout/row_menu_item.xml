@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="12dp">
 
-    
-    <ImageView
-        android:id="@+id/img"
 
+    <ImageView
+
+        android:id="@+id/img"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:contentDescription="@string/app_name"
+        android:contentDescription="@string/menu_item_image"
+        android:src="@android:drawable/ic_menu_gallery"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+
     <TextView
+
         android:id="@+id/textName"
-        android:text="placeholder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="@string/menu_item_name_placeholder"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
         app:layout_constraintStart_toEndOf="@id/img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/img"/>
 
+
     <TextView
+
         android:id="@+id/textPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="£10.00"
+        android:text="@string/menu_item_price_placeholder"
+        android:layout_marginTop="9dp"
         app:layout_constraintStart_toStartOf="@id/textName"
         app:layout_constraintTop_toBottomOf="@id/textName"
         app:layout_constraintEnd_toEndOf="parent"/>

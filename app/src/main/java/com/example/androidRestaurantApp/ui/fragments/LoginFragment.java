@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class LoginFragment extends Fragment {
 
     // fixed student database id (replace with your own student id)
-    private final String studentId = "student_123";
+    private final String studentId = "student_1"; //the student ID i used in postman
 
     public LoginFragment() {
 
@@ -58,6 +58,7 @@ public class LoginFragment extends Fragment {
 
         buttonLogin.setOnClickListener(v -> {
 
+            //AI helped me understand how to implement this part significantly .
             final String username =
                     editUsername.getText() != null
                             ? editUsername.getText().toString().trim()
@@ -83,7 +84,7 @@ public class LoginFragment extends Fragment {
             // fetch the user from the API
             authRepository.fetchUser(studentId, username).observe(getViewLifecycleOwner(), result -> {
 
-                // request failed
+                // request failed or network failed
                 if (result == null || !result.success) {
 
                     String msg = "Login failed";
@@ -104,7 +105,7 @@ public class LoginFragment extends Fragment {
                 if (user == null) {
 
                     Toast.makeText(requireContext(), "User not found", Toast.LENGTH_SHORT).show();
-                    return;
+                        return;
 
                 }
 
@@ -124,6 +125,7 @@ public class LoginFragment extends Fragment {
                 if (user.usertype != null && user.usertype.equalsIgnoreCase("staff")) {
 
                     Toast.makeText(requireContext(), "Logged in as Staff", Toast.LENGTH_SHORT).show();
+
                     nav.navigate(R.id.staffHomeFragment);
 
                 } else {

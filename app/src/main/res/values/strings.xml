@@ -35,6 +35,9 @@
     <string name="staff_view_reservations">View Reservations</string>
     <string name="staff_manage_reservations">Manage Reservations</string>
     <string name="staff_manage_menu_items">Manage Menu Items</string>
+    <string name="menu_item_image">Menu item image</string>
+    <string name="menu_item_name_placeholder">Menu item name</string>
+    <string name="menu_item_price_placeholder">£0.00</string>
 
 </resources>
 
