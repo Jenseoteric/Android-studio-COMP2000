@@ -111,7 +111,7 @@ public class LoginFragment extends Fragment {
 
 
 
-                // compare password typed vs password stored
+                // compare passwords
                 if (user.password == null || !password.equals(user.password)) {
 
                     Toast.makeText(requireContext(), "Incorrect password", Toast.LENGTH_SHORT).show();
@@ -131,7 +131,7 @@ public class LoginFragment extends Fragment {
                 } else {
 
                     Toast.makeText(requireContext(), "Logged in as Guest", Toast.LENGTH_SHORT).show();
-                    nav.navigate(R.id.menuFragment);
+                    nav.navigate(R.id.guestHomeFragment);
 
                 }
 

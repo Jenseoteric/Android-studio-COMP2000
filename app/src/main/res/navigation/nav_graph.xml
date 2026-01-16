@@ -8,7 +8,8 @@
     app:startDestination="@id/loginFragment">
 
 
-    <!-- START SCREEN -->
+    <!-- start screen !!!!!!!   -->
+
     <fragment
 
         android:id="@+id/loginFragment"
@@ -53,5 +54,33 @@
         android:name="com.example.androidRestaurantApp.ui.fragments.StaffSettingsFragment"
         android:label="Staff Settings"
         tools:layout="@layout/fragment_staff_settings" />
+
+    <fragment
+
+        android:id="@+id/guestHomeFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.GuestHomeFragment"
+        android:label="Guest Home"
+        tools:layout="@layout/fragment_guest_home" />
+
+
+    <fragment
+        android:id="@+id/guestReservationsFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.GuestReservationsFragment"
+        android:label="Guest Reservations"
+        tools:layout="@layout/fragment_guest_reservations" />
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.AlertsFragment"
+        android:label="Alerts"
+        tools:layout="@layout/alerts" />
+
+
+    <fragment
+        android:id="@+id/guestSettingsFragment"
+        android:name="com.example.androidRestaurantApp.ui.fragments.GuestSettingsFragment"
+        android:label="Guest Settings"
+        tools:layout="@layout/fragment_guest_settings" />
+
 
 </navigation>
