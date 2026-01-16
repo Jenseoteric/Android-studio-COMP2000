@@ -6,7 +6,8 @@ import com.example.androidRestaurantApp.R;
 
 
 
-// placeholder! (guest)
+// placeholder!
+
 public class GuestSettingsFragment extends Fragment {
 
     public GuestSettingsFragment() {

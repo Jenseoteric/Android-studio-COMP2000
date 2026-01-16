@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import com.example.androidRestaurantApp.R;
 
 
-// placeholder (
+// placeholder
 
 public class AlertsFragment extends Fragment {
 

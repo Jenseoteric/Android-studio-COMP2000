@@ -34,6 +34,7 @@ public class GuestHomeFragment extends Fragment {
 
 
         // guest routes
+
         buttonMenu.setOnClickListener(v -> nav.navigate(R.id.menuFragment));
 
         buttonReservations.setOnClickListener(v -> nav.navigate(R.id.guestReservationsFragment));

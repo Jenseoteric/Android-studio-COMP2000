@@ -22,8 +22,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginFragment extends Fragment {
 
-    // fixed student database id (replace with your own student id)
-    private final String studentId = "student_1"; //the student ID i used in postman
+    // fixed student database id (student_1 is the student id i have used in postman)
+    private final String studentId = "student_1";
 
     public LoginFragment() {
 

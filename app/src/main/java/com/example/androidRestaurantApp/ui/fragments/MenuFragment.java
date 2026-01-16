@@ -41,7 +41,7 @@ public class MenuFragment extends Fragment {
         rv.setAdapter(adapter);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.240.72.69/comp2000/coursework/") //this is the RESTAPI server url
+                .baseUrl("http://10.240.72.69/comp2000/coursework/") //this is the server API url
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
